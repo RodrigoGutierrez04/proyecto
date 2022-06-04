@@ -527,6 +527,15 @@ padding-bottom: 1.6rem;
     
 }
 
+.espacio:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+.espacio:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
 textarea {
     min-height: 150px;
 }
