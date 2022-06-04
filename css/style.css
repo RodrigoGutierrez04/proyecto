@@ -548,9 +548,12 @@ textarea {
     font-size: 1.1rem;
     border: none;
     cursor: pointer;
-   
+   transition: .3s;
 }
 
+.btn:hover{
+    background-color: #476fd3;
+}
 
 /* MEDIAS */
 @media screen and (max-width: 500px){
