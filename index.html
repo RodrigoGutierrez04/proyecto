@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link href="//db.onlinewebfonts.com/c/25b37831529b1fe1a47649b945dda302?family=Bw+Modelica+Med" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Consultorio Dental</title>
+    <link rel="stylesheet" href="./css/style.css">
+
    
 </head>
+
 <body>
 <!-- Inicio de NavBar -->
 
-    <header class="grillaHeader">
-        <a href="./index.html" class="header__logo"><img src="./img/centrodent-removebg-preview (2).png" alt="Logo Dentistry"></a>
-     
-        <ul class="header__items">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./assets/nosotros.html">Nosotros</a></li>
-            <li><a href="./assets/staff.html">Staff</a></li>
-            <li><a href="./assets/galeria.html">Galería</a></li>
-            <li><a href="./assets/contacto.html">Contacto</a></li>
-       </ul>
-    
-    </header>
-<!--  Fin de grilla-->
+<header>
+  <nav class="navbar navbar-expand-lg bgColor">
+      <div class="container-fluid">
+        <a class="navbar-brand px-5 href="#">
+            <img class="logo" src="./img/centrodent-removebg-preview (2).png" alt="">
+  
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNav">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./assets/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./assets/staff.html">Staff</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./assets/galeria.html"">Galería</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./assets/contacto.html">Contacto</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
 
-   
-
-    <!-- Fin de NavBar -->
+<!-- Fin de NavBar -->
 
 
     <!-- Inicio de Hero -->
@@ -45,54 +66,51 @@
 
     </div>
 
-    <!-- INICIO DE PostHero-->
-    <div class="grillaPost-hero">
-    
-        
-    
-        <!-- INICIO de POSTHero Parte Izquierda -->
-            <div class="container__elements">
-                <div class="container__elements__text1">
-                    <h3>Ubícanos</h3>
-                    <p>Nuestra Dirección 328,<br> Los Alpes, ID 83404</p>
-                    
-                    <a href="#" class="container__elements__boton">Llámanos +51 999 999 999</a>
-                </div>
-            </div>
-                    
+<!-- INICIO DE PostHero-->
+<section class="postHero container-fluid">
+    <div class="contenedor__posthero row">
+      
+      <!-- PostHero Izquierda -->
+          <div class="container__elements__text1 col-md-6">
+              <h3>Ubícanos</h3>
+              <p>Nuestra Dirección 328,<br> Los Alpes, ID 83404</p>
+          
+              <a href="#" class="container__elements__boton">Llámanos +51 999 999 999</a>
+          </div>
+       <!-- Fin PostHero Izquierda -->
 
-         <!-- FIN de POSTHero Parte Izquierda -->
+       <!-- PostHero Derecha -->
 
-
-        <!-- INICIO de POSTHero Parte Derecha -->
-
-            <div class="container__elements__text2">
-                <h3 class="container__elements__text2__h3">Nuestros Horarios</h3>
-                
-                <div class="container__horarios1">
-                    <div class="container__horarios_izquierda">Lunes a Viernes</div>
-                
-                    <div class="container__horarios_derecha">8:00am a 8:00pm</div>
-                </div>
-
-                <div class="container__horarios1">
-                    <div class="container__horarios_izquierda">Sábado</div>
-                    <div class="container__horarios_derecha">11:00am - 5:00pm</div>
-                
-                </div>
-
-                <div class="container__horarios1">
-
-                    <div class="container__horarios_izquierda">Domingo</div>
-                    <div class="container__horarios_derecha">Llamadas de Emergencia</div>
-
-                </div>
+          <div class="container__elements__text2 col-md-6">
+            <h3 class="container__elements__text2__h3">Nuestros Horarios</h3>
             
-        <!-- FIN de Hero POSTParte Derecha -->
+            <div class="container__horarios1">
+                <div class="container__horarios_izquierda">Lunes a Viernes</div>
+            
+                <div class="container__horarios_derecha">8:00am a 8:00pm</div>
+            </div>
 
+            <div class="container__horarios1">
+                <div class="container__horarios_izquierda">Sábado</div>
+                <div class="container__horarios_derecha">11:00am - 5:00pm</div>
+            
+            </div>
 
+            <div class="container__horarios1">
+
+                <div class="container__horarios_izquierda">Domingo</div>
+                <div class="container__horarios_derecha">Llamadas de Emergencia</div>
+
+            </div>
+          </div>
+
+        <!-- Fin PostHero Derecha -->
     </div>
-</div>
+</section>
+    
+       
+
+
 <!-- Fin de PostHero-->
 
 
@@ -136,10 +154,8 @@
      </footer>
     <!-- Fin de footer -->
 
-    <script src="js/wow.min.js"></script>
-    <script>
-       new WOW().init();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     
 </body>
 
