@@ -8,62 +8,38 @@
 
 /* INICIO HEADER */
 
-.grillaHeader{
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    column-gap: 300px;
-    grid-template-areas: "logo nav";
-    background-color:   #F4F4F4;
+.logo{
+width: 200px;
+}
+
+.bgColor{
+    background-color: #F4F4F4;
 }
 
 
-.grillaHero{
-    display: grid;
-    grid-template-columns:  1fr;
-   
-}
-
-
-    .header__logo img{
-       
-        width: 15rem;
-        align-content: center;
-        padding-left: 3rem;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 70px;
-    }
-
-    .header__items{
-        display: flex;
-        list-style: none;
-        padding: 3rem 2rem;
-    }
-
-    .header__items li{
-        
-        margin: 0px 2.5rem;
-    }
-    
-
-    .header__items li a{
-        text-decoration: none;
+a.nav-link{
         color: #5C89F7;
         font-weight: 900;
         font-size: large;
     }
 
+a.nav-link.active{
+        color: #5C89F7;
+        font-weight: 900;
+        font-size: large;
+    }
+
+    
+
 /* FIN HEADER */
 
 /* INICIO HERO INDEX */
 
-section.hero{
-    display: flex;
+.hero{
+    
     height: 100vh;
-    align-items: flex-start;
-    padding-left: 12rem;
-    justify-content: center;
-    flex-direction: column;
+    padding-left: 9rem;
+    padding-top: 14rem;   
     background: url(../img/largeadult.png);
     background-repeat: no-repeat;
     background-size: cover    ;
@@ -98,12 +74,10 @@ section.hero{
 
 
 /* INICIO de POSTHERO */
-div.grillaPost-hero{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+section.postHero{
+height: 18rem;
     background-color: #5C89F7;
-    justify-content: space-between;
+    
 }
 
 
@@ -118,7 +92,13 @@ div.container__elements{
     
 }
 
-
+.container__elements__text1{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0rem;
+    justify-content: center;
+    align-items: center;
+}
 
     .container__elements__text1 h3{
         margin-top: 0;
@@ -196,22 +176,10 @@ div.container__elements{
 
 /* INICIO DE FOOTER V1*/
 
-.grillaFooter{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 0.2rem 0rem 2rem 0;
-}
+
 
 
 /* INICIO DE FOOTER LOGO  */
-
-
-
-
-.footer__logo{
-    padding: 4rem;
-    padding-left: 18rem;
-}
 
 .footer__logo img{
     width: 9rem;
@@ -220,15 +188,27 @@ div.container__elements{
 /* FIN DE FOOTER LOGO */
 
 /* INICIO DE FOOTER IZQUIERDA */
+
+
+
+.footer__left h3{
+    color: #4475f1;
+    padding-bottom: 0.5rem;
+}
+
+.footer__left li{
+    line-height: 2rem ;
+}
+
+
+.footer__right h3{
+    color: #4475f1;
+    padding-bottom: 0.5rem
+
+}
 .footer__izquierda{
     padding-right: 13rem;
     padding-left: 8rem;
-    padding-top: 4.5rem  ;
-}
-
-.footer__izquierda h3{
-    color: #4475f1;
-    padding-bottom: 1.3rem;
 }
 
 
@@ -248,17 +228,17 @@ div.container__elements{
 
     /* INICIO DE FOOTER DERECHA*/
 
-
-.footer__derecha{
-    padding-top: 4.5rem;
+.footer{
+    height: 50vh;
 }
+
+
 div.footer__derecha__text{
     line-height: 1.4rem 
 }
 .footer__derecha h3{
     color: #4475f1;
-    padding-bottom: 1.3rem;
-
+    
 }
 
 .footer__derecha a{
@@ -573,9 +553,8 @@ textarea {
         background: url(../img/resp.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position-y: 17rem;
+        background-position-y: 20rem;
         padding: 0;
-        justify-content: initial;
 
     }
 
@@ -595,14 +574,10 @@ textarea {
 
 
 /* (INICIO) MEDIA - PostHERO */
-div.grillaPost-hero {
-    display: flex;
-    flex-direction: column;
+section.postHero {
+   height: 35rem;
 }
 
-div.container__elements {
-    padding: 4rem 0rem 2.5rem 0rem;
-}
 .container__elements__text2 {
     padding: 2rem 5rem 5rem 5rem;    
     font-size: medium;
@@ -705,21 +680,34 @@ div.container__elements {
 
         /* (INICIO) MEDIA - FOOTERv1 */
 
-        .grillaFooter{
+        .footer{
+            height: 100vh;
+        }
+        .footer__logo{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+        
         }
 
       
         .footer__izquierda{
-            padding: 1.5rem 0rem;
+            display: flex;
+            align-items: center ;
+            flex-direction: column;
+            padding: 0;
+        }
 
+        .footer__izquierda ul{
+            padding: 0;
+            padding-right: 10px;
         }
 
         .footer__derecha{
-            padding: 2rem 0rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
         }
 
         /* (FIN) MEDIA - FOOTERv1 */
