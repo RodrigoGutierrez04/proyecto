@@ -12,6 +12,7 @@
 width: 200px;
 }
 
+
 .bgColor{
     background-color: #F4F4F4;
 }
@@ -23,11 +24,7 @@ a.nav-link{
         font-size: large;
     }
 
-a.nav-link.active{
-        color: #5C89F7;
-        font-weight: 900;
-        font-size: large;
-    }
+
 
     
 
@@ -70,12 +67,15 @@ a.nav-link.active{
         border-radius: 40px;
         text-decoration: none;
     }
+
+    .logoResponsive{
+        display: none;
+    }
 /* FIN DE HERO INDEX */
 
 
 /* INICIO de POSTHERO */
 section.postHero{
-height: 18rem;
     background-color: #5C89F7;
     
 }
@@ -83,62 +83,22 @@ height: 18rem;
 
 /* INICIO de POSTHero Parte Izquierda */
 
-div.container__elements{  
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 0rem;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.container__elements__text1{
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 0rem;
-    justify-content: center;
-    align-items: center;
-}
-
-    .container__elements__text1 h3{
-        margin-top: 0;
-        margin-bottom: 10px;
-        font-family: Poppins,sans-serif;
-        color: #fff;
-        font-size: 20px;
-    }
-
-    .container__elements__text1 p{
-        margin-bottom: 2rem;
-        font-family: Poppins,sans-serif;
-        line-height: 2rem;
-        color: #fff;
-    }
 
     .container__elements__boton {
-        padding: 11px 20px;
         border: 2px solid #fff;
-        border-radius: 2px;
+        border-radius: 5px;
         font-family: Poppins,sans-serif;
-        color: #fff;
         font-size: 14px;
         letter-spacing: 1px;
-        text-transform: uppercase;
-        text-decoration: none;
+
         
     }
 /* FIN de POSTHero Parte Izquierda */
 
 /* INICIO de POSTHero Parte Derecha */
 
-.container__elements__text2{
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 10rem 4rem 0rem;
-    align-content: center;
-    
-}
-.container__elements__text2 h3 {
+
+.container__elements__text2_h3 h3 {
     margin-top: 0;
     margin-bottom: 10px;
     font-family: Poppins,sans-serif;
@@ -147,11 +107,10 @@ div.container__elements{
 }
 
 .container__horarios1{
-    display: flex;
+  
     border-bottom: 1px solid #fff;
     line-height: 34px;
-    flex-direction: column;
-    justify-content: center;
+    width: 10cm;
 }
 
 .container__horarios_izquierda{
@@ -166,8 +125,6 @@ div.container__elements{
     display: flex;
     font-family: Poppins,sans-serif;
     color: #fff;
-    padding-left: 12rem;
-    justify-content: end;
 }
 /* FIN de POSTHero Parte Derecha */
 
@@ -185,12 +142,6 @@ div.container__elements{
     width: 9rem;
 }
 
-/* FIN DE FOOTER LOGO */
-
-/* INICIO DE FOOTER IZQUIERDA */
-
-
-
 .footer__left h3{
     color: #4475f1;
     padding-bottom: 0.5rem;
@@ -206,168 +157,44 @@ div.container__elements{
     padding-bottom: 0.5rem
 
 }
-.footer__izquierda{
-    padding-right: 13rem;
-    padding-left: 8rem;
-}
-
-
-.footer__izquierda__elementos li{
-    list-style: none;
-    line-height: 2rem ;
-    color:#000000;
-
-}
-.footer__izquierda__elementos a{
-    line-height: 1.5rem;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-/* FIN DE FOOTER IZQUIERDA*/
-
-    /* INICIO DE FOOTER DERECHA*/
-
-.footer{
-    height: 50vh;
-}
-
-
-div.footer__derecha__text{
-    line-height: 1.4rem 
-}
-.footer__derecha h3{
-    color: #4475f1;
-    
-}
-
-.footer__derecha a{
-    line-height: 2.5rem;
-    text-decoration: none;
-    color: #000000;
-}
-
-    /* FIN DE FOOTER DERECHA*/
 
 /* FIN DE FOOTER V1*/
 
 /* INICIO DE NOSOTROS */
-section.grillaNosotros{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
-    padding: 0rem 15px 7.5rem 15px;
-   
-    
-}
 
-div.nosotros__izquierda{
-    display: flex;
-    flex-direction: column;
-    padding-top: 7rem;
-    padding-left: 8rem;
-    padding-right: 5rem;
-}
 
 .nosotros__izquierda h2{
-    padding-bottom: 2rem;
     font-size: 3.5rem;
-    text-transform: uppercase;
     font-weight: 500;
     line-height: 1.2;
     color: #4475f1;
 }
 
-.nosotros__izquierda__p{
-    width: 32rem;
-}
-.nosotros__izquierda__p p{
+
+.nosotros__izquierda p{
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.9rem;
     text-align: justify;
 }
 
-.nosotros__derecha{
-    padding-top: 13rem ;
-    padding-left: 3rem;
-    padding-right: 4rem;
-}
-video{
-    width: 35rem;
-    border-radius: 1rem;
+
+video{ 
+    width: 40rem;
+border-radius: 2rem;    
+
 }
 /* FIN DE NOSOTROS */
 
 /* INICIO DE FOOTER V2 */
-.grillaFooterV2{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        padding: 0.2rem 0rem 2rem 0;
-        letter-spacing: 1px;
+.footerV2{
+        
         background-color: #5C89F7;
-        align-items: center;
+        
    
 }
 
-/* INICIO DE FOOTER IZQUIERDA */
-.footer__izquierdaV2{
-    padding-right: 13rem;
-    padding-left: 8rem;
-    padding-top: 4.5rem  ;
-}
-
-.footer__izquierdaV2 h3{
-    color: #ffffff;
-    padding-bottom: 1.3rem;
-}
-
-
-.footer__izquierda__elementosV2 li{
-    list-style: none;
-    line-height: 2rem ;
-}
-.footer__izquierda__elementosV2 a{
-    list-style: none;
-    line-height: 1.5rem;
-    text-decoration: none;
-    list-style: none;
-    color:#ffffff;
-}
-
-/* FIN DE FOOTER IZQUIERDA*/
-
-
-/* INICIO DE FOOTER DERECHA*/
-
-
-.footer__derechaV2{
-padding-bottom: 1.6rem;
-}
-    div.footer__derecha__text{
-        line-height: 1.4rem 
-        
-    }
-    .footer__derechaV2 h3{
-        color: #feffff;
-        padding-bottom: 1.3rem;
-    
-    }
-    
-    .footer__derechaV2 p    {
-        text-decoration: none;
-        color: #ffffff;
-
-    }
-    .footer__derechaV2 a{
-        line-height: 2.5rem;
-        text-decoration: none;
-        color: #ffffff;
-
-    }
-    
-        /* FIN DE FOOTER DERECHA*/
-    
 /* FIN DE FOOTER V2 */
 
 
@@ -536,38 +363,65 @@ textarea {
 }
 
 /* MEDIAS */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 575px){
 /* (INICIO) MEDIA - HEADER */
-.header__logo img {
-    width: 12rem;
-    padding-left: 0;
-    margin-left: 40px;
-}
+
 /* (FIN) MEDIA - HEADER */
 
 
 /* (INICIO) MEDIA - HERO */
 
     section.hero {
-        height: 125vh;
-        background: url(../img/resp.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: 20rem;
+        height: auto;
         padding: 0;
-
+        background: none;
+        background-repeat: no-repeat;
+        background-size:contain;
+background-position-y: 13rem;
     }
 
+.logoResponsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoResponsive img{
+    width: 100%;
+    height: auto;    
+    
+
+}
+    section.hero {
+        
+        padding: 0;
+        background-image;: none
+        background-repeat: no-repeat;
+        background-size:contain;
+background-position-y: 13rem;
+    }
+
+   
+
     h2.hero__textBox {
+    width: 100%;
+    height: auto;
     padding: 2rem 2rem 1rem 40px;
+    text-align: center;
     }
 
     p.hero__textBox {
-        padding: 0rem 2rem 0rem 40px;
+        text-align: center;
     }
 
+    .anchorButton{
+        display: flex ;
+        justify-content: center;
+        text-align: center;
+    }
     a.hero__textBox {
-      margin: 40px;
+      margin: 0rem 0rem;
+
+       width: 15rem;
     }
 
 /* (FIN) MEDIA - HERO */
@@ -589,33 +443,6 @@ section.postHero {
 /* (FIN) MEDIA - PostHERO */
 
 /* (INICIO) MEDIA - NOSOTROS */
-    section.grillaNosotros{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    }
-
-    div.nosotros__izquierda {
-        padding: 2.5rem;
-        align-items: center;
-        padding-bottom: 0.2rem;
-    }
-
-    .nosotros__izquierda__p {
-    width: auto;
-    padding: 1rem;
-    
-    }
-
-    .nosotros__izquierda__p p {
-        font-size: 1.10rem;
-    }
-
-    .nosotros__derecha {
-        padding: 2rem 0;
-   
-    }
-
     video {
         width: 25rem;
         display: block;
@@ -676,70 +503,74 @@ section.postHero {
 /* (FIN) MEDIA - CONTACTO */
 
 
-/* FOOTERS */
 
-        /* (INICIO) MEDIA - FOOTERv1 */
-
-        .footer{
-            height: 100vh;
-        }
-        .footer__logo{
-            display: flex;
-            align-items: center;
-        
-        }
-
-      
-        .footer__izquierda{
-            display: flex;
-            align-items: center ;
-            flex-direction: column;
-            padding: 0;
-        }
-
-        .footer__izquierda ul{
-            padding: 0;
-            padding-right: 10px;
-        }
-
-        .footer__derecha{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-        }
-
-        /* (FIN) MEDIA - FOOTERv1 */
-
-
-
-        /* (INICIO) MEDIA - FOOTERv2 */
-
-        .grillaFooterV2{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                
-        }
-
-            
-        .footer__logo{
-                padding: 3rem 0rem 0rem 0rem;
-        }
-
-        .footer__izquierdaV2{
-            padding: 1.5rem 0rem;
-
-        }
-
-        .footer__derechaV2{
-            padding: 2rem 0rem;
-        }
-        /* (FIN) MEDIA - FOOTERv2 */
-
-/* FIN DE FOOTERS */
 }
+
+
+
+@media screen and (max-width: 1100px){
+    .hero{
+      padding-left: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 575px) and (max-width: 882px){
+    
+    /* (INICIO) MEDIA - HERO */
+
+    section.hero {
+        height: auto;
+        padding: 0;
+        background: none;
+        background-repeat: no-repeat;
+        background-size:contain;
+
+    }
+
+    .logoResponsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    h2.hero__textBox {
+    padding: 2rem 2rem 1rem 40px;
+    text-align: center;
+    }
+
+    p.hero__textBox {
+        padding: 0rem 2rem 0rem 40px;
+        text-align: center;
+
+    }
+
+    .anchorButton{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+    a.hero__textBox {
+    margin: 0rem 0rem;
+     
+      width: 18rem;
+
+    }
+
+/* (FIN) MEDIA - HERO */
+/* (INICIO) MEDIA - NOSOTROS */
+    
+
+ 
+
+video {
+    width: 30rem;
+  
+}
+
+/* (FIN) MEDIA - NOSOTROS */
+    }
 
 /* FIN DE MEDIAS */
