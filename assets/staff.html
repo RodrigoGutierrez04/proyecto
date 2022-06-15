@@ -6,77 +6,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link href="//db.onlinewebfonts.com/c/25b37831529b1fe1a47649b945dda302?family=Bw+Modelica+Med" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/destino.css">
+
    
     <title>Consultorio Dental</title>
 
 </head>
 
 <body>
-<!-- Inicio de NavBar -->
+<!-- Inicio de HeaderNav -->
 
-<nav class="navbar navbar-expand-lg bg-light px-5">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-          <img class="logo" src="../img/centrodent-removebg-preview (2).png" alt="">
-
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="staff.html">Staff</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="galeria.html"">Galería</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-          
-        </ul>
+<header class="header">
+  <nav class="navbar navbar-expand-lg header__bgColor">
+      <div class="container-fluid">
+        <a class="navbar-brand px-lg-5 href="#">
+            <img class="header__logo" src="../img/centrodent-removebg-preview (2).png" alt="">
+  
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNav">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item px-3">
+              <a class="header__text nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="header__text nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="header__text nav-link active" href="staff.html">Staff</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="header__text nav-link" href="galeria.html"">Galería</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="header__text nav-link" href="contacto.html">Contacto</a>
+            </li>
+            
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-<!--  Fin de grilla-->
+    </nav>
+</header>
 
    
 
-    <!-- Fin de NavBar -->
+<!-- Fin de HeaderNav -->
 <!-- INICIO DE STAFF -->
-<div class="grillaStaff">
+<div class="container-fluid">
 
-        <div class="staff__text animate__animated animate__fadeIn">
-            <h3>STAFF</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nulla exercitationem, similique et quisquam eos cupiditate voluptas, id nostrum ipsa repudiandae veniam deleniti velit ad reprehenderit voluptatum rem sapiente!</p>
-        </div>
-    
+  <!-- Texto Staff -->
+  <div class="row m-5 staff">
+    <div class="col-lg-3 col-12"></div>
+    <div class="staff__text col-lg-6 col-12 text-center">
 
-            <div class="staff__elements animate__animated animate__fadeIn">
-                <img src="../img/staff1.jpg" alt="Dentista 1" class="dentist">
-                <h3>Nombre Apellido</h3>
-            </div>
+      <h3>STAFF</h3>
+      
+      <p class="px-lg-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nulla exercitationem, similique et quisquam eos cupiditate voluptas, id nostrum ipsa repudiandae veniam deleniti velit ad reprehenderit voluptatum rem sapiente!</p>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 pb-5 col-sm-12 d-flex flex-column align-items-center staff__elements animate__animated animate__fadeIn">
+      <img class="pb-lg-4 pb-4" src="../img/staff1.jpg" alt="Dentista 1" class="dentist">
+      <h4>Nombre Apellido</h4>
+
+   
+    </div>
+
+    <div class="col-lg-4 pb-5 col-sm-12 d-flex flex-column align-items-center staff__elements animate__animated animate__fadeIn">
+      <img class="pb-lg-4 pb-4" src="../img/staff2.jpg" alt="Dentista 2" class="dentist">
+      <h4>Nombre Apellido</h4>
+    </div>
+
+    <div class="col-lg-4 pb-5 col-sm-12 d-flex flex-column align-items-center staff__elements animate__animated animate__fadeIn">
+      <img class="pb-lg-4 pb-4" src="../img/staff3.jpg" alt="Dentista 3" class="dentist">
+      <h4 class="">Nombre Apellido</h4>
+    </div>
+  </div>
+
+
+  <!-- Fin Texto Staff -->
+
+</div>
+
+
+
+
+
+<!--  fin de nuevo staff-->
+
         
-            <div class="staff__elements animate__animated animate__fadeIn">
-                <img src="../img/staff2.jpg" alt="Dentista 2" class="dentist">
-                <h3>Nombre Apellido</h3>
-            </div>
-        
-            <div class="staff__elements animate__animated animate__fadeIn">
-                <img src="../img/staff3.jpg" alt="Dentista 3" class="dentist">
-                <h3>Nombre Apellido</h3>
-            </div>
                
                 
        
