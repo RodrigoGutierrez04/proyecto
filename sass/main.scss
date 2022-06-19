@@ -10,6 +10,20 @@
 @import "./parciales/header";
 @import "./parciales/footers";
 
+
+@mixin fontStyle($size, $weight, $height) {     /* Este mixin se usó en la línea 108 */
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+ }
+ // Maps
+$colors: ( 
+        mainColor: #5C89F8,
+        headerColor:  #F4F4F4,
+        footerBlueText: #4475f1
+); 
+
+
 /* Inicio Hero  */
 .hero{
     height: 100vh;
@@ -21,7 +35,7 @@
     background-position-x: center;
 
     &__textContainer h2{
-        color: #5C89F8;
+        color: map-get($colors, mainColor );
         font-size: 2.2em;
         line-height: 1.5em;
 
@@ -29,7 +43,7 @@
 
     &__textContainer p{
         line-height: 3rem;
-        color:rgb(0, 0, 0);
+        
     }
 
     &__textContainer a{
@@ -37,8 +51,7 @@
         margin-top: 30px;
         padding: 8px 20px;
         letter-spacing: 1px;
-        background: #5C89F8;
-        color: #fff;
+        background: map-get($colors, mainColor );
         border-radius: 40px;
         text-decoration: none;
     }
@@ -52,7 +65,7 @@
 
 /* Inicio PostHero */
 .postHero{
-    background-color: #5C89F7;
+    background-color: map-get($colors, mainColor );
     
     &__boton {
         border: 2px solid #fff;
@@ -70,15 +83,20 @@
         width: 10cm;
     }
 
+    /* Uso de Extend */
+    .postHero__horarios{
+    display: flex;
+    font-family: Poppins,sans-serif;
+    }
     &__horariosIzquierda{
         position: absolute;
-        display: flex;
-        font-family: Poppins,sans-serif;
+        @extend .postHero__horarios;
+        
     }
 
     &__horariosDerecha{
-        display: flex;
-        font-family: Poppins,sans-serif;
+        @extend .postHero__horarios
+        
         
     }
 }
@@ -87,17 +105,13 @@
 /* Inicio Nosotros*/
 .nosotros{
     &__izquierda h2{
-        font-size: 3.5rem;
-        font-weight: 500;
-        line-height: 1.2;
-        color: #4475f1;
+        @include fontStyle(3.5rem, 500, 1.2)
+        color: map-get($colors, footerBlueText);
     }
     
     
     &__izquierda p{
-        font-size: 1.25rem;
-        font-weight: 300;
-        line-height: 1.9rem;
+        @include fontStyle(1.25rem, 300 , 1.9rem );
         text-align: justify;
     }
     
@@ -167,6 +181,7 @@
     justify-content: center;
     align-items: center;
 
+
     &__box__izq{
         background-image: url(../img/imagendent.jpg);
         background-size: cover;
@@ -221,7 +236,7 @@
     .btn{
         width: 100%;
         padding: 0.5rem 1rem;
-        background-color: #5C89F7;
+        background-color: map-get($colors, mainColor );
         color: #fff;
         font-size: 1.1rem;
         border: none;

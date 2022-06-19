@@ -1,8 +1,15 @@
 /* Inicio Header*/
+$colors: ( 
+        mainColor: #5C89F8,
+        headerColor:  #F4F4F4,
+        footerBlueText: #4475f1
+); 
+
+/* Inicio Header*/
 .header{
     &__bgColor{
-      background-color: #F4F4F4;
-  }
+      background-color: map-get($colors, headerColor );
+    }
   
   &__logo{
     width: 200px;

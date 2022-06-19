@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
@@ -5,6 +6,7 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box; }
 
+/* Inicio Header*/
 /* Inicio Header*/
 .header__bgColor {
   background-color: #F4F4F4; }
@@ -36,7 +38,7 @@
 /* Fin Footer V1 */
 /* Inicio Footer V2 */
 .footerV2 {
-  background-color: #5C89F7; }
+  background-color: #5C89F8; }
 
 /* Fin Footer V2 */
 /* Inicio Hero  */
@@ -53,15 +55,13 @@
     font-size: 2.2em;
     line-height: 1.5em; }
   .hero__textContainer p {
-    line-height: 3rem;
-    color: black; }
+    line-height: 3rem; }
   .hero__textContainer a {
     display: inline-block;
     margin-top: 30px;
     padding: 8px 20px;
     letter-spacing: 1px;
     background: #5C89F8;
-    color: #fff;
     border-radius: 40px;
     text-decoration: none; }
   .hero .imgIndexResponsive {
@@ -70,7 +70,8 @@
 /* Fin Hero */
 /* Inicio PostHero */
 .postHero {
-  background-color: #5C89F7; }
+  background-color: #5C89F8;
+  /* Uso de Extend */ }
   .postHero__boton {
     border: 2px solid #fff;
     border-radius: 5px;
@@ -81,23 +82,23 @@
     border-bottom: 1px solid #fff;
     line-height: 34px;
     width: 10cm; }
+  .postHero .postHero__horarios, .postHero .postHero__horariosIzquierda, .postHero .postHero__horariosDerecha {
+    display: flex;
+    font-family: Poppins,sans-serif; }
   .postHero__horariosIzquierda {
-    position: absolute;
-    display: flex;
-    font-family: Poppins,sans-serif; }
-  .postHero__horariosDerecha {
-    display: flex;
-    font-family: Poppins,sans-serif; }
+    position: absolute; }
 
 /* Fin PostHero */
 /* Inicio Nosotros*/
 .nosotros__izquierda h2 {
+  /* Este mixin se usó en la línea 108 */
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 1.2;
   color: #4475f1; }
 
 .nosotros__izquierda p {
+  /* Este mixin se usó en la línea 108 */
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.9rem;
@@ -182,7 +183,7 @@
   .contact .btn {
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: #5C89F7;
+    background-color: #5C89F8;
     color: #fff;
     font-size: 1.1rem;
     border: none;
