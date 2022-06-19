@@ -181,7 +181,6 @@ $colors: (
     justify-content: center;
     align-items: center;
 
-
     &__box__izq{
         background-image: url(../img/imagendent.jpg);
         background-size: cover;
@@ -197,6 +196,7 @@ $colors: (
 
     &__box__der{
         padding: 25px 40px;
+        background-color: white;
     }
 
     &__box__der h2{

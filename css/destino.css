@@ -157,7 +157,8 @@
     width: 100%;
     height: 100%; }
   .contact__box__der {
-    padding: 25px 40px; }
+    padding: 25px 40px;
+    background-color: white; }
   .contact__box__der h2 {
     position: relative;
     padding: 0 0 10px;
