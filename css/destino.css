@@ -145,7 +145,7 @@
 /* Inicio Contacto */
 .contact {
   display: flex;
-  padding: 40px 100px;
+  padding: 40px 40px;
   justify-content: center;
   align-items: center; }
   .contact__box__izq {
