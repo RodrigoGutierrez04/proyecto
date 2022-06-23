@@ -67,9 +67,22 @@
     
     
 
-    }   
-    
+            
+          
+        
+   
 
+    }   
+
+.postHero{
+
+    &__container__horarios{
+        border-bottom: 1px solid #fff;
+        line-height: 34px;
+        width: 8cm;
+    }
+}
+    
 .nosotros h1{
     font-size: 2.3rem;
 }
